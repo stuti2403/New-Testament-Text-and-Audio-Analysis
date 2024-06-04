@@ -47,6 +47,53 @@ This project involves the extraction and analysis of text and audio data from th
 - **Audio Analysis**: 
   - Analyzed audio properties such as amplitude, silence detection, frequency spectrum, anomalies, duration distribution, and sample rates.
 
+## Key Performance Indicators
+
+### Sentiment Analysis
+
+- **Sentiment Analysis with TextBlob**: 
+  - Conducted sentiment analysis using TextBlob on a sample of words.
+  - **Key Finding**: Most words in the sample were neutral, indicating a balanced sentiment distribution.
+
+### Audio Properties Analysis
+
+- **Audio File Analysis**: 
+  - Analyzed audio files to extract key properties such as duration, sample rates, and channels.
+  - **Key Findings**: 
+    - Sample rates distribution indicates diversity in audio quality, influencing the accuracy of speech recognition and synthesis.
+    - Channels distribution highlights the stereo or mono nature of audio, affecting the spatial perception in TTS and STT applications.
+
+### Text Properties Analysis
+
+- **Text File Examination**: 
+  - Examined text files to understand text lengths and word counts.
+  - **Key Findings**: 
+    - Around 25 files have lengths between 2000-4000 words.
+    - Maximum of 750 words in a file.
+
+### Alignment Between Text and Spoken Content
+
+- **Alignment Analysis**: 
+  - A higher frequency in a specific range of ratios may indicate common patterns or challenges in aligning text with audio in TTS or STT applications.
+
+### Outlier Detection
+
+- **Z-Score Analysis**: 
+  - Utilized Z-score analysis to detect outliers in audio durations.
+  - **Key Finding**: Two files detected as outliers, providing insights into anomalous audio files that may require special handling or preprocessing steps for improved TTS and STT performance.
+
+### Amplitude Analysis
+
+- **Mean Amplitude Distribution**: 
+  - The plot visualizes the distribution of mean amplitudes across all audio files.
+  - **Key Finding**: Mean amplitude is 3600 for more than 20 audio files, providing insights into the overall loudness or intensity of the audio files, which can be crucial for understanding speech clarity and quality in TTS and STT applications.
+
+### Silence Detection
+
+- **Silent Interval Analysis**: 
+  - Analyzed the presence and distribution of silent intervals in the audio.
+  - **Key Finding**: Silence of around 4 seconds is found to be present maximum times, which can be important for analyzing pauses, speech cadence, and overall audio structure in TTS and STT applications.
+
 ## Challenges Faced and Solutions
 
 - **Dynamic Dropdown Menu**: 
